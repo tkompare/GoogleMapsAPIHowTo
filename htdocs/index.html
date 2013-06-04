@@ -36,6 +36,7 @@
 				<li>A Google API Project with <i>Google Maps API v3</i> service turned on. (<a href="https://code.google.com/apis/console/" target="_blank">Google API Console</a>)</li>
 				<li>A place to put your code so you can view it in a browser</li>
 				<li>A decent web code editor. Not word processing software like MS Word</li>
+				<li>A web browser with javascript console output (ex: Firefox with Firebug)</li>
 			</ul>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<hr>
@@ -46,24 +47,43 @@
 			<ol>
 				<li>
 					<h4>Create the <i>/js</i> directory</h4>
-					<p>In your web site location's document root, create a <b>/js</b> directory. This will eventually hold your Javascript code to make the map.</p>
-					
+					<p>In your web site location's document root, create a <b>/js</b> directory.</p>
+				</li>
+				<li>
+					<h4>Create the <i>main.js</i> file</h4>
+					<p>In your web site location's document root, create a <b>main.js</b> file within the <b>/js</b> directory. This will eventually hold your Javascript code to make the map. Leave this file blank for now.</p>
 				</li>
 				<li>
 					<h4>Create the <i>index.html</i> page</h4>
-					<p>In your web site location's document root, create an <b>index.html</b> page that looks like <i>lesson1.html</i></p>
+					<p>In your web site location's document root, create an <b>index.html</b> page that looks like this.</p>
+					<script src="https://gist.github.com/tkompare/5706944.js"></script>
 				</li>
 				<li>
 					<h4>Insert your Google API Key</h4>
 					<p>In your <b>index.html</b> page code, replace '<i>YOUR_GOOGLE_API_KEY_HERE</i>' with the API Key found in your <a href="https://code.google.com/apis/console/" target="_blank">Google API project</a>.</p>
 				</li>
+				<li>
+					<h4>Test your <i>index.html</i> page</h4>
+					<p>Point your web browser to your index page. Take a look at your browser's Javascript console to make sure there are not any errors so far. It should look like this <a href="lesson1.html" target="_blank">lesson1.html</a></p>
+				</li>
+				<li>
+					<h4>Move on to <a href="#lesson2">Lesson 2</a></h4>
+				</li>
 			</ol>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<hr>
 		</div>
 		<div id="lesson2" class="lesson-div">
 			<h2>Lesson 2</h2>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h3>Create a &lt;DIV&gt; in which to place the map</h3>
+			<ol>
+				<li>
+					<h4>Create the neccesary DIVs</h4>
+					<p>Open up you <b>index.html</b> file and place the following style and html code:</p>
+					<script src="https://gist.github.com/tkompare/5707220.js"></script>
+					<p>The style code should go just above the closing HEAD tag. The map DIVs should go within the BODY tag at the top. Like so:</p>
+					<script src="https://gist.github.com/tkompare/5707272.js"></script>
+				</li>
+			</ol>
 			<hr>
 		</div>
 	</div>
